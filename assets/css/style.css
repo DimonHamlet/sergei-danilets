@@ -954,7 +954,12 @@ nav .menu-link:hover{
     background: #F51D1E;
 }
 .found-on-site .ticket-item:hover {
-    transform: none;
+    transform: none !important;
+    border-bottom: none !important;
+}
+.format-block .ticket-item:hover {
+    transform: none !important;
+    border-bottom: none !important;
 }
 .found-on-site .format-circle {
     background: none;
@@ -1304,14 +1309,20 @@ nav .menu-link:hover{
     margin-top: 0;
 }
 .footer-menu li {
-    margin-bottom: 40px;
+    margin-bottom: 32px;
 }
 .footer-menu li a {
     color: #fff;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     line-height: 21px;
+    padding: 5px 0;
     font-weight: 300;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+.footer-menu li a:hover {
+    border-color: #F6DE02;
 }
 .footer-2 .footer-social-container {
     width: 100%;
