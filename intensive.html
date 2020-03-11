@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Сергей Данилец</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/readMoreFunc.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="assets/images/logo.png"/>
+</head>
+<body>
+<header>
+    <div class="top-left-element">
+        <img src="assets/images/top-left.png">
+    </div>
+    <div class="mobile-menu">
+        <div class="logo">
+            <img src="assets/images/logo.png">
+        </div>
+        <div class="burger" id="burger" onclick="openBurger()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+    <div class="mobile-menu-open" id="mobileMenuOpen" style="display: none">
+        <div class="open-menu-header">
+            <div class="logo">
+                <img src="assets/images/logo.png">
+            </div>
+            <div class="close" onclick="openBurger()">
+            </div>
+        </div>
+        <div class="open-menu-content">
+            <div class="main-banner-title" id="qwe">
+                <div class="speed-image">
+                    <img src="assets/images/spidometr.png">
+                </div>
+                "ЖИВИ<br>
+                НА ПОЛНУЮ!"
+                <div class="open-menu-img">
+                    <img src="assets/images/open-menu-img.png">
+                </div>
+            </div>
+            <div class="mobile-nav">
+                <a href="#link1" class="mobile-menu-link" onclick="openBurger()">Кому полезен</a>
+                <a href="#link2" class="mobile-menu-link" onclick="openBurger()">Спикеры</a>
+                <a href="#link3" class="mobile-menu-link" onclick="openBurger()">Тайминг</a>
+                <a href="#link4" class="mobile-menu-link" onclick="openBurger()">Стоимость</a>
+                <a href="#link5" class="mobile-menu-link" onclick="openBurger()">Контакты</a>
+                <div class="social">
+                    <a href="#">
+                        <div class="facebook">
+                            <img src="assets/images/facebook.png">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="instagram">
+                            <img src="assets/images/instagram.png">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top-menu">
+        <nav>
+            <div class="logo">
+                <img src="assets/images/logo.png">
+            </div>
+            <a href="#link1" class="menu-link">Кому полезен</a>
+            <a href="#link2" class="menu-link">Спикеры</a>
+            <a href="#link3" class="menu-link">Тайминг</a>
+            <a href="#link4" class="menu-link">Стоимость</a>
+            <a href="#link5" class="menu-link">Контакты</a>
+        </nav>
+    </div>
+    <div class="header-content">
+        <div class="main-banner-title">
+            <div class="speed-image">
+                <img src="assets/images/spidometr.png">
+            </div>
+            "ЖИВИ<br>
+            НА ПОЛНУЮ!"
+        </div>
+        <div class="header-subtitle">
+            Семинар-практикум  с открытой дискуссией
+            экспертов фитнеса и психологом
+        </div>
+        <div class="date-place">
+            <div class="date">
+                21 марта 2020
+                12:00
+            </div>
+            <div class="place">
+                г. Харьков<br>
+                ул. Благовещенская, 1
+            </div>
+        </div>
+        <div class="motivation-title">
+            Стань лучшей версией себя
+        </div>
+        <a href="#link6" class="top-btn-link">
+            <div class="top-btn">
+                Хочу пойти
+            </div>
+        </a>
+        <div class="header-main-img">
+            <img src="assets/images/banner-photo.png" class="desktop">
+            <img src="assets/images/mobile-top-photo.png" class="mobile">
+        </div>
+    </div>
+    <div class="bottom-right-img">
+        <img src="assets/images/bottom-right.png">
+    </div>
+</header>
+
+<div class="block-1" id="link1">
+    <div class="block-1-img">
+        <img src="assets/images/block-1.png">
+    </div>
+    <div class="block-1-tex-content">
+        <div class="block-header">
+            Кому будет полезен семинар
+        </div>
+        <div class="block-item">
+            <div class="red-point"></div>
+            <div class="block-item-text">
+                Людям, испытывающим проблемы и расстройства в пищевом поведении
+            </div>
+        </div>
+        <div class="block-item">
+            <div class="red-point"></div>
+            <div class="block-item-text">
+                Всем, кто далек от спорта и не знает с чего начать
+            </div>
+        </div>
+        <div class="block-item">
+            <div class="red-point"></div>
+            <div class="block-item-text">
+                Активным людям, которые хотят наладить систему питания
+                и улучшить эффективность от тренировок
+            </div>
+        </div>
+        <div class="block-item">
+            <div class="red-point"></div>
+            <div class="block-item-text">
+                Инструкторам, фитнес-тренерам, профессиональным атлетам
+            </div>
+        </div>
+        <div class="block-item">
+            <div class="red-point"></div>
+            <div class="block-item-text">
+                Консультантам по питанию
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="block-2">
+    <div class="bloc-2-text-content">
+        <div class="block-header">
+            На семинаре ты научишься
+        </div>
+        <div class="block-item">
+            <div class="red-point"></div>
+            <div class="block-item-text">
+                Как внедрить здоровый образ жизни и с чего начать.
+                Теория, практика, психология.
+            </div>
+        </div>
+        <div class="block-item">
+            <div class="red-point"></div>
+            <div class="block-item-text">
+                Как не выбирать между «Жить на полную»
+                и «Здоровье и ограничения во всем». Почему бы это не совместить?
+            </div>
+        </div>
+        <div class="block-item">
+            <div class="red-point"></div>
+            <div class="block-item-text">
+                Понимать значение гормонов в организме
+            </div>
+        </div>
+        <div class="block-item">
+            <div class="red-point"></div>
+            <div class="block-item-text">
+                Как найти своего тренера
+            </div>
+        </div>
+        <div class="block-item">
+            <div class="red-point"></div>
+            <div class="block-item-text">
+                Разбираться в продуктах: полезные и вредные
+            </div>
+        </div>
+        <div class="block-item">
+            <div class="red-point"></div>
+            <div class="block-item-text">
+                Составлять свой чистый повседневный рацион
+            </div>
+        </div>
+        <a href="#link6" class="top-btn-link red-btn-link">
+            <div class="top-btn red-btn">
+                Принять участие
+            </div>
+        </a>
+    </div>
+    <div class="block-2-image">
+        <img src="assets/images/block-2.png">
+    </div>
+</div>
+
+<div class="block-3">
+    <div class="left-side">
+        <div class="left-side-img">
+            <img src="assets/images/block-3.png">
+        </div>
+        <div class="quote-text">
+            <div>
+            «Мне есть чем поделиться! Очень хочу помочь людям улучшить их жизнь и здоровье! Это не так сложно, как всем кажется, у всего есть причины.»
+            </div>
+        </div>
+        <div class="block-3-left-text">
+            И еще многих престижных соревнований. Эксперт в сфере фитнеса, бодиблдинга и диетологии.
+            Его метод тренинга дает потрясающие результаты на подопечных — как профессиональных атлетах, так и новичках в фитнесе.
+        </div>
+    </div>
+    <div class="right-side" id="link2">
+        <div class="block-header">
+            Спикеры
+        </div>
+        <div class="author-name">
+            Сергей Данилец
+        </div>
+        <div class="block-item">
+            <div class="red-point"></div>
+            <div class="block-item-text">
+                Чемпион Arnold Classic Europe 2019 Elite PRO
+            </div>
+        </div>
+        <div class="block-item">
+            <div class="red-point"></div>
+            <div class="block-item-text">
+                Двукратный чемпион Elite PRO Nafplio 2019
+            </div>
+        </div>
+        <div class="block-item">
+            <div class="red-point"></div>
+            <div class="block-item-text">
+                Чемпион Arnold Classic Africa 2019 Elite PRO
+            </div>
+        </div>
+        <div class="block-item">
+            <div class="red-point"></div>
+            <div class="block-item-text">
+                Чемпион Elite PRO Malta 2019
+            </div>
+        </div>
+        <div class="block-item">
+            <div class="red-point"></div>
+            <div class="block-item-text">
+                Абсолютный чемпион Arnold Classic Europe 2018
+            </div>
+        </div>
+        <div class="block-item">
+            <div class="red-point"></div>
+            <div class="block-item-text">
+                Абсолютный чемпион Dimond CUP Poland 2018
+            </div>
+        </div>
+        <div class="left-side-img">
+            <img src="assets/images/block-4.png">
+        </div>
+    </div>
+</div>
+
+<div class="speakers-block">
+    <div class="speaker-item">
+        <div class="speaker-header">
+            Кожушко Виктор
+        </div>
+        <div class="speaker-photo">
+            <img src="assets/images/viktor.png">
+        </div>
+        <div class="speaker-text">
+            Президент Харьковской федерации бодибилдинга, мастер спорта
+            по армрестлингу и паурлифтингу, тренер чемпионов Украины по бодибилдингу.
+        </div>
+    </div>
+    <div class="speaker-item">
+        <div class="speaker-header">
+            Приходько Дмитрий
+        </div>
+        <div class="speaker-photo">
+            <img src="assets/images/dmitry.png">
+        </div>
+        <div class="speaker-text">
+            Тренерский стаж более 10 лет, подготовил чемпиона Арнольд классик в профессионалах,
+            победителей чемпионата Европы, Украины и областных  соревнований по бодибилдингу.
+        </div>
+    </div>
+    <div class="speaker-item">
+        <div class="speaker-header">
+            Гордиенко Диана
+        </div>
+        <div class="speaker-photo">
+            <img src="assets/images/diana.png">
+        </div>
+        <div class="speaker-text">
+            Психолог, психотерапевт.<br/><br/>
+
+            Веду ресурсные групповые занятия и индивидуальные для тех, кто хочет обрести себя, развить свои
+            сильные стороны и получать от жизни только радость и удовольствие.
+            Лектор многочисленных марафонов по коррекции фигуры, активный борец с зависимостями
+            от сладкого и еды после 20:00.<br/><br/>
+
+            Знаю, как не отказывать себе и при этом не набирать лишних кг.
+        </div>
+    </div>
+</div>
+
+<div class="block-timing" id="link3">
+    <div class="block-timing-content">
+        <div class="block-header">
+            Тайминг семинара
+        </div>
+        <div class="timing-item">
+            <div class="time-element">
+                11:30 - 12:00
+            </div>
+            <div class="timing-text">
+                Регистрация
+            </div>
+        </div>
+        <div class="timing-item">
+            <div class="time-element">
+                12:00 - 13:00
+            </div>
+            <div class="timing-text">
+                <div class="read-more-text readmore-content mobile-content">
+                   <span class="marker-color">1.</span> Правильное питание и спорт легко внедряется в нашу жизнь<br>
+                    и становиться неотъемлемой ее частью. Теория, практика, психология.<br>
+                    <span class="marker-color">2.</span> Необходимость спорта и правильного питания<br>
+                    <span class="marker-color">3.</span> Поговорим о питании<br>
+                    •  Вода<br>
+                    •  Качество продуктов<br>
+                    •  Общее количество еды<br>
+                    •  Никакого сахара и углеводов перед сном?<br>
+                    •  Диетический и не диетические продукты<br>
+                    •  Психо-эмоциональное состояние и еда<br>
+                    •  Ограничения, необходимы ли они?<br>
+                    •  Чистый повседневный рацион. Как часто кушать?<br>
+                    •  Почему мы знаем что это нельзя но едим.
+                    Инстинкты и сознание.<br>
+                    •  Практика
+                </div>
+                <div class="read-more-text desktop-content" >
+                    <span class="marker-color">1.</span> Правильное питание и спорт легко внедряется в нашу жизнь<br>
+                    и становиться неотъемлемой ее частью. Теория, практика, психология.<br>
+                    <span class="marker-color">2.</span> Необходимость спорта и правильного питания<br>
+                    <span class="marker-color">3.</span> Поговорим о питании<br>
+                    •  Вода<br>
+                    •  Качество продуктов<br>
+                    •  Общее количество еды<br>
+                    •  Никакого сахара и углеводов перед сном?<br>
+                    •  Диетический и не диетические продукты<br>
+                    •  Психо-эмоциональное состояние и еда<br>
+                    •  Ограничения, необходимы ли они?<br>
+                    •  Чистый повседневный рацион. Как часто кушать?<br>
+                    •  Почему мы знаем что это нельзя но едим.
+                    Инстинкты и сознание.<br>
+                    •  Практика
+                </div>
+                <!--<div class="read-more-btn" id="readMoreBtn" onclick="readMoreFunc()">-->
+                    <!--read-more-->
+                <!--</div>-->
+            </div>
+        </div>
+        <div class="timing-item">
+            <div class="time-element">
+                13:00 - 13:10
+            </div>
+            <div class="timing-text">
+                Кофе брейк
+            </div>
+        </div>
+        <div class="timing-item">
+            <div class="time-element">
+                13:10 - 14:00
+            </div>
+            <div class="timing-text readmore-content mobile-content read-more-text">
+                <span class="marker-color">4.</span> Гормоны — это основа<br>
+                •  Все процессы жизнедеятельности и наше поведение зависит от гормонов<br>
+                •  Факторы, влияющие на наши гормоны не только питание<br>
+                <span class="marker-color">5.</span> Тренировки и дисциплина<br>
+                •  Почему для кого-то тяжело быть дисциплинированным,
+                а для кого то легко. Как себя заставить что-то делать.<br>
+                Цели и мотивация
+                •  Принцип 2% людей. Задатки и потенциал<br>
+                •  С чего начать? Первые тренировки<br>
+                •  Как найти своего тренера?<br>
+                <span class="marker-color">6.</span> Социальная значимость
+                Принцип дисциплины - добиваешься успеха в чем-то,
+                ты знаешь как добиться успеха в любой сфере.<br>
+                •  Что значит «Жить на полную по-настоящему?»<br>
+                <span class="marker-color">7.</span> Отрытая дискуссия с
+            </div>
+            <div class="timing-text desktop-content read-more-text">
+                <span class="marker-color">4.</span> Гормоны — это основа<br>
+                •  Все процессы жизнедеятельности и наше поведение зависит от гормонов<br>
+                •  Факторы, влияющие на наши гормоны не только питание<br>
+                <span class="marker-color">5.</span> Тренировки и дисциплина<br>
+                •  Почему для кого-то тяжело быть дисциплинированным,
+                а для кого то легко. Как себя заставить что-то делать.<br>
+                Цели и мотивация
+                •  Принцип 2% людей. Задатки и потенциал<br>
+                •  С чего начать? Первые тренировки<br>
+                •  Как найти своего тренера?<br>
+                <span class="marker-color">6.</span> Социальная значимость
+                Принцип дисциплины - добиваешься успеха в чем-то,
+                ты знаешь как добиться успеха в любой сфере.<br>
+                •  Что значит «Жить на полную по-настоящему?»<br>
+                <span class="marker-color">7.</span> Отрытая дискуссия с
+            </div>
+        </div>
+        <div class="timing-item">
+            <div class="time-element">
+                14:00 - 14:15
+            </div>
+            <div class="timing-text">
+                Фото
+            </div>
+        </div>
+        <div class="gift-item">
+            <div class="gift">
+                <img src="assets/images/gift.png">
+            </div>
+            <div class="gift-text">
+                Также вас ожидают ПОДАРКИ от наших партнеров.<br>
+                Автограф и фото-сессия в закрытом формате после семинара.
+            </div>
+        </div>
+    </div>
+    <div class="timing-image-container">
+        <div class="timing-image">
+            <img src="assets/images/block-5.png">
+        </div>
+    </div>
+</div>
+
+
+<div class="tickets-block" id="link4">
+    <div class="tickets-block-content">
+        <div class="tickets-header">
+            Выбери свой билет
+        </div>
+        <div class="tickets-items">
+            <div class="ticket-item">
+                <div class="ticket-title">
+                    ONE
+                </div>
+                <div class="ticket-description">
+                    Я пойду на семинар один!
+                </div>
+                <div class="ticket-price">
+                    450грн/1 человек
+                </div>
+                <a href="#link6">
+                    <div class="ticket-btn">
+                        Купить
+                    </div>
+                </a>
+            </div>
+            <div class="ticket-item">
+                <div class="ticket-title">
+                    PLUS 1
+                </div>
+                <div class="ticket-description">
+                    Возьму с собой друга или подругу!
+                </div>
+                <div class="ticket-price">
+                    400грн/1 человек
+                </div>
+                <a href="#link6">
+                    <div class="ticket-btn">
+                        Купить
+                    </div>
+                </a>
+            </div>
+            <div class="ticket-item">
+                <div class="ticket-title">
+                    TEAM
+                </div>
+                <div class="ticket-description">
+                    Моя банда всегда со мной!
+                </div>
+                <div class="ticket-price">
+                    300грн/1 человек
+                </div>
+                <a href="#link6">
+                    <div class="ticket-btn">
+                        Купить
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="contact-container" id="link5">
+    <div class="contacts-block">
+        <div class="title-social-call">
+            <div class="title-social">
+                <div class="contact-title">
+                    Контакты
+                </div>
+                <div class="contacts-social">
+                    <div class="contact-facebook">
+                        <img src="assets/images/facebook.png">
+                    </div>
+                    <div class="contact-instagram">
+                        <img src="assets/images/instagram.png">
+                    </div>
+                    <div class="contact-telegram">
+                        <img src="assets/images/telegram.png">
+                    </div>
+                </div>
+            </div>
+            <a href="#link5">
+                <span class="call-me-btn">
+                    Позвонить мне
+                </span>
+            </a>
+        </div>
+        <div class="main-contact-info">
+            <div class="main-contact-info-content">
+                <div class="contact-telephone main-contact-item">
+                    <div class="telephone-title main-contact-title">
+                        Телефон:
+                    </div>
+                    <div class="number-icon">
+                        <div class="telephone-icon contact-icon">
+                            <img src="assets/images/call.png">
+                        </div>
+                        <div class="telephone-number main-contact-description">
+                            + 38 (050) - 047 - 06 - 20
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-telephone main-contact-item">
+                    <div class="telephone-title main-contact-title">
+                        Адрес:
+                    </div>
+                    <div class="number-icon">
+                        <div class="telephone-icon contact-icon">
+                            <img src="assets/images/pin.png">
+                        </div>
+                        <div class="telephone-number main-contact-description">
+                            г. Харьков, ул. Благовещенская, 1<br>
+                            https://fabrika.space/contacts/
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-telephone main-contact-item">
+                    <div class="telephone-title main-contact-title">
+                        E-mail:
+                    </div>
+                    <div class="number-icon">
+                        <div class="telephone-icon contact-icon">
+                            <img src="assets/images/mail.png">
+                        </div>
+                        <div class="telephone-number main-contact-description">
+                            bigasskitty.agency@gmail.com
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="desktop-footer-map">
+                <img src="assets/images/desktop-map.png" class="desktop-content">
+                <img src="assets/images/mobile-map.png" class="mobile-content">
+            </div>
+        </div>
+
+        <div class="form-content">
+            <div class="form-text-content">
+                <div class="date-title">
+                    21 марта 12:00 Fabrika Space
+                </div>
+                <div class="main-contact-title-red" id="link6">
+                    "ЖИВИ НА ПОЛНУЮ!"
+                </div>
+
+
+                <form>
+
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="Danilets">
+                    <input type="hidden" name="admin_email" value="vs.smetankin@gmail.com">
+                    <input type="hidden" name="form_subject" value="Запись на семинар">
+                    <!-- END Hidden Required Fields -->
+
+                    <input type="text" name="Name" id="name-field" placeholder="Имя и Фамилия" required><br>
+                    <input type="text" name="Phone" id="phone-field" placeholder="Номер телефона" required><br>
+                    <input type="text" name="E-mail" id="email-field" placeholder="E-mail" required><br>
+                    <input type="text" name="promokode" id="promocode-field" placeholder="Промокод"><br>
+                    <label for="promocode-field" id="promo-label">Если хочешь скидку для друзей, в строке «ПРОМОКОД» укажи «Я с друзьями» и их фамилии</label>
+                    <button>Зарегистрироваться</button>
+
+                </form>
+
+                <div class="after-form-title">
+                    Мы ждем тебя!
+                </div>
+            </div>
+            <div class="contact-footer-image">
+                <img src="assets/images/footer-photo.png">
+            </div>
+        </div>
+    </div>
+    <div class="bottom-rect">
+        <img src="assets/images/footer-rect.png">
+    </div>
+</div>
+
+
+
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-social-container">
+            <div class="footer-logo">
+                <img src="assets/images/logo.png">
+            </div>
+            <div class="footer-social">
+                <div class="social-footer-item">
+                    <a href="#">
+                        <div class="footer-instagram">
+                            <img src="assets/images/instagram.png">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="footer-facebook">
+                            <img src="assets/images/facebook.png">
+                        </div>
+                    <a href="#">
+                    </a>
+                        <div class="footer-telegram">
+                            <img src="assets/images/telegram.png">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-text-container">
+            <div class="design-by">
+                Design by <span>AleksaDesign</span>
+            </div>
+            <div class="copyright">
+                © 2020 Sergey Danilets All Rights Reserved.
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Readmore.js/2.2.0/readmore.js"></script>
+<script>
+    $('.readmore-content').readmore({
+        embedCSS: false,
+        speed: 400,
+        moreLink: '<div class="read-more-btn">Читать полностью</div>',
+        lessLink: '<div class="read-more-btn hide">Скрыть</div>',
+        heightMargin: 25,
+        collapsedHeight: 80,
+    });
+</script>
+
+
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="form.js"></script>
+</body>
+</html>
